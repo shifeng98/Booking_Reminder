@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#211D44">
+    <item android:title="@string/urgentList"
+        android:id="@+id/urgentNav"
+        android:icon="@drawable/important"/>
+
+    <item android:title="@string/homeText"
+        android:id="@+id/homeNav"
+        android:icon="@drawable/home"/>
+
+    <item android:title="@string/completedList"
+        android:id="@+id/completeNav"
+        android:icon="@drawable/completed"/>
+</menu>

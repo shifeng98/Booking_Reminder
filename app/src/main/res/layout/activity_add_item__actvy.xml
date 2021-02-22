@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".AddItem_Actvy">
+
+    <!--TextView
+        android:id="@+id/addItemLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:paddingVertical="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="@string/addItemTitle"
+        style="@style/titleStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+    <TextView
+        android:id="@+id/addItemTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addItemNameTitle"
+        style="@style/titleStyle"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+        <!--app:layout_constraintTop_toBottomOf="@+id/addItemLayoutTitle" /-->
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:ems="12"
+        android:hint="Shopping Item"
+        android:inputType="textPersonName"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle1" />
+
+    <TextView
+        android:id="@+id/addItemTitle2"
+        style="@style/titleStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addDetailTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItemName" />
+
+    <EditText
+        android:id="@+id/editDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:gravity="start|top"
+        android:lines="5"
+        android:paddingLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_border"
+        android:layout_marginLeft="10dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle2" />
+
+    <TextView
+        android:id="@+id/title3"
+        style="@style/titleStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addQuantityTItle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDetails" />
+
+    <TextView
+        android:id="@+id/addItemTitle3"
+        style="@style/titleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addSizeTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/title3"
+        app:layout_constraintStart_toStartOf="@+id/sizeSpinner"
+        app:layout_constraintTop_toTopOf="@+id/title3" />
+
+    <ImageButton
+        android:id="@+id/decreaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/editQty"
+        app:layout_constraintStart_toEndOf="@+id/editQty"
+        app:layout_constraintTop_toTopOf="@+id/editQty"
+        app:srcCompat="@drawable/arrow_down" />
+
+    <ImageButton
+        android:id="@+id/increaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/editQty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editQty"
+        app:srcCompat="@drawable/arrow_up" />
+
+    <EditText
+        android:id="@+id/editQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:background="@drawable/text_border"
+        android:inputType="number"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/increaseButton"
+        app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+
+    <Spinner
+        android:id="@+id/sizeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_border"
+        app:layout_constraintBottom_toBottomOf="@+id/editQty"
+        app:layout_constraintEnd_toEndOf="@+id/editDetails"
+        app:layout_constraintStart_toEndOf="@+id/decreaseButton"
+        app:layout_constraintTop_toTopOf="@+id/editQty" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/titleStyle"
+        android:text="@string/urgentCheckboxTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQty" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTitle"
+        android:ems="10"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btngreen"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

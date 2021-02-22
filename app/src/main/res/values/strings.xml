@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Booking List</string>
+
+    <string name="title1">Booking List</string>
+    <string name="itemName">Three Little Pigs</string>
+    <string name="itemQuantity">Vlm: 0</string>
+    <string name="itemSize">Duration: Default</string>
+    <string name="bought">Borrowed</string>
+    <string name="itemDate">Date Borrowed: </string>
+    <string name="displayTitle">Display Item</string>
+    <string name="shoppingItemTitle">Booking Item</string>
+    <string name="detailTitle">Detail</string>
+    <string name="qtyTitle">Volume: </string>
+    <string name="sizeTitle">Duration: </string>
+    <string name="urgentTitle">Urgent: </string>
+    <string name="addItemTitle">Add Item</string>
+    <string name="addItemNameTitle">Item</string>
+    <string name="addDetailTitle">Details</string>
+    <string name="addQuantityTItle">Volume</string>
+    <string name="addSizeTitle">Duration</string>
+    <string name="urgentCheckboxTitle">Urgent</string>
+    <string name="buttonTitle">ADD TO LIST</string>
+    <string name="urgentList">Urgent List</string>
+    <string name="completedList">Complete List</string>
+    <string name="homeText">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

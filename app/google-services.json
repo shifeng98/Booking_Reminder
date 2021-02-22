@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529542794571",
+    "project_id": "booking-list-c56cf",
+    "storage_bucket": "booking-list-c56cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529542794571:android:f89a3115dcc577a62fecce",
+        "android_client_info": {
+          "package_name": "com.example.shoppinglist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529542794571-so8cddcr4bmrnd7gn4om96tl6acok9gs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIk3heg3AyxB3ItuIy6qYu2Kfp_mEbi6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529542794571-so8cddcr4bmrnd7gn4om96tl6acok9gs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
